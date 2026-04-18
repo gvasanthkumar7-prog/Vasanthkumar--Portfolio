@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vasanthkumar Govindaraji — Graduate QC Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#0B1929;--navy2:#12263F;--teal:#0EA5A0;--teal2:#2DD4BF;--amber:#F59E0B;--rose:#F43F5E;--white:#F0F4F8;--grey:#94A3B8;--card:rgba(255,255,255,0.035);--border:rgba(255,255,255,0.07);--grad:linear-gradient(135deg,#0EA5A0,#2DD4BF)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--white);font-family:'Outfit',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;z-index:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;opacity:.5}
+.orb{position:fixed;border-radius:50%;filter:blur(110px);pointer-events:none;z-index:0;animation:drift 20s ease-in-out infinite}
+.o1{width:700px;height:700px;background:var(--teal);top:-250px;right:-200px;opacity:.12;animation-duration:22s}
+.o2{width:500px;height:500px;background:var(--amber);bottom:-200px;left:-150px;opacity:.10;animation-duration:28s;animation-delay:-10s}
+.o3{width:350px;height:350px;background:var(--rose);top:45%;left:25%;opacity:.07;animation-duration:16s;animation-delay:-5s}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(50px,-40px) scale(1.06)}66%{transform:translate(-30px,50px) scale(.94)}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2.5rem;background:rgba(11,25,41,.88);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;animation:slideD .6s ease both}
+@keyframes slideD{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--teal2)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--grey);text-decoration:none;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;transition:color .3s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--teal2);transform:scaleX(0);transition:transform .3s}
+.nav-links a:hover{color:var(--white)}.nav-links a:hover::after{transform:scaleX(1)}
+.container{max-width:1120px;margin:0 auto;padding:0 2rem;position:relative;z-index:1}
+#hero{min-height:100vh;display:flex;align-items:center;padding:7rem 0 5rem}
+.hero-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:5rem;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--teal2);border:1px solid rgba(45,212,191,.3);padding:.35rem .9rem;border-radius:20px;margin-bottom:1.5rem;animation:fadeU .8s .2s ease both}
+.hero-tag span{width:6px;height:6px;border-radius:50%;background:var(--teal2);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,5.5vw,4.8rem);line-height:1.05;margin-bottom:.6rem;animation:fadeU .8s .3s ease both}
+h1 em{color:var(--teal2);font-style:normal}
+.hero-sub{font-size:.95rem;color:var(--grey);margin-bottom:1.4rem;letter-spacing:.03em;animation:fadeU .8s .4s ease both}
+.hero-intro{font-size:.97rem;line-height:1.85;color:rgba(240,244,248,.72);margin-bottom:2rem;animation:fadeU .8s .5s ease both}
+.hero-intro strong{color:var(--teal2);font-weight:600}
+.pills{display:flex;flex-wrap:wrap;gap:.7rem;animation:fadeU .8s .6s ease both}
+.pill{display:flex;align-items:center;gap:.45rem;font-size:.78rem;color:var(--grey);font-family:'JetBrains Mono',monospace;background:var(--card);border:1px solid var(--border);padding:.38rem .85rem;border-radius:3px;text-decoration:none;transition:all .3s}
+.pill:hover{color:var(--teal2);border-color:rgba(45,212,191,.4);background:rgba(14,165,160,.08)}
+.pill-dot{width:5px;height:5px;border-radius:50%;background:var(--teal2)}
+.hero-btns{display:flex;gap:1rem;margin-top:1.8rem;animation:fadeU .8s .7s ease both}
+.btn-p{background:var(--teal);color:var(--white);border:none;padding:.9rem 2rem;border-radius:3px;font-family:'Outfit',sans-serif;font-size:.9rem;font-weight:500;cursor:pointer;text-decoration:none;transition:all .3s;letter-spacing:.04em;position:relative;overflow:hidden}
+.btn-p::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 30%,rgba(255,255,255,.12));transform:translateX(-100%);transition:transform .4s}
+.btn-p:hover{background:var(--teal2);transform:translateY(-2px);box-shadow:0 10px 30px rgba(14,165,160,.35)}.btn-p:hover::before{transform:translateX(0)}
+.btn-o{background:transparent;color:var(--white);border:1px solid var(--border);padding:.9rem 2rem;border-radius:3px;font-family:'Outfit',sans-serif;font-size:.9rem;font-weight:500;cursor:pointer;text-decoration:none;transition:all .3s;letter-spacing:.04em}
+.btn-o:hover{border-color:var(--teal2);color:var(--teal2);transform:translateY(-2px)}
+.hero-right{animation:fadeU .8s .4s ease both}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.stat-c{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.8rem 1.4rem;transition:all .4s;position:relative;overflow:hidden;cursor:default}
+.stat-c::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.stat-c:hover{border-color:rgba(14,165,160,.35);transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.3)}.stat-c:hover::before{transform:scaleX(1)}
+.stat-n{font-family:'Playfair Display',serif;font-size:2.6rem;color:var(--teal2);line-height:1;margin-bottom:.3rem}
+.stat-l{font-size:.75rem;color:var(--grey);letter-spacing:.06em;text-transform:uppercase;line-height:1.4}
+.hero-diagram{margin-top:1rem;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem;transition:all .4s}
+.hero-diagram:hover{border-color:rgba(14,165,160,.3)}
+.diag-label{font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--grey);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.8rem}
+@keyframes fadeU{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+section{padding:6rem 0;position:relative;z-index:1}
+.sec-label{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--teal2);letter-spacing:.16em;text-transform:uppercase;margin-bottom:.7rem}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3vw,2.6rem);margin-bottom:3rem;line-height:1.15}
+.sec-title span{color:var(--teal2)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv.vis{opacity:1;transform:translateY(0)}
+#skills{background:rgba(0,0,0,.18)}
+.skills-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.sk-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.8rem;transition:all .4s;position:relative;overflow:hidden}
+.sk-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:0;background:linear-gradient(0deg,rgba(14,165,160,.07),transparent);transition:height .4s}
+.sk-card:hover{border-color:rgba(14,165,160,.4);transform:translateY(-5px);box-shadow:0 22px 44px rgba(0,0,0,.3)}.sk-card:hover::after{height:100%}
+.sk-icon{font-size:2rem;margin-bottom:1rem;display:block}
+.sk-title{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--teal2);margin-bottom:1rem}
+.sk-list{list-style:none}
+.sk-list li{font-size:.86rem;color:rgba(240,244,248,.68);padding:.32rem 0;border-bottom:1px solid var(--border);transition:color .3s;display:flex;align-items:center;gap:.5rem}
+.sk-list li:last-child{border-bottom:none}.sk-list li::before{content:'›';color:var(--teal2);font-size:1.1rem;flex-shrink:0}
+.sk-card:hover .sk-list li{color:rgba(240,244,248,.9)}
+.skills-diagram{margin-top:2.5rem;background:var(--card);border:1px solid var(--border);border-radius:6px;padding:2rem;text-align:center}
+.res-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:3rem;position:relative;overflow:hidden;margin-bottom:2rem}
+.res-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--teal),var(--amber))}
+.res-title{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:.5rem}
+.res-meta{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--teal2);margin-bottom:1.5rem;letter-spacing:.06em}
+.res-body{font-size:.92rem;color:rgba(240,244,248,.72);line-height:1.85;margin-bottom:2rem}
+.workflow{display:flex;align-items:center;gap:0;margin:2rem 0;flex-wrap:wrap}
+.wf-step{background:rgba(14,165,160,.1);border:1px solid rgba(14,165,160,.3);border-radius:4px;padding:.7rem 1.1rem;font-size:.78rem;color:var(--teal2);font-weight:500;white-space:nowrap;transition:all .3s}
+.wf-step:hover{background:rgba(14,165,160,.2);transform:translateY(-2px)}
+.wf-arr{color:var(--grey);padding:0 .5rem;font-size:1.1rem}
+.rtable{width:100%;border-collapse:collapse;font-size:.84rem;margin-top:2rem}
+.rtable thead tr{background:rgba(14,165,160,.15);border-bottom:2px solid var(--teal)}
+.rtable th{padding:1rem 1.2rem;text-align:left;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal2);font-weight:600}
+.rtable tbody tr{border-bottom:1px solid var(--border);transition:background .3s}
+.rtable tbody tr:hover{background:rgba(14,165,160,.06)}
+.rtable td{padding:.95rem 1.2rem;color:rgba(240,244,248,.78);vertical-align:top}
+.rtable td:first-child{color:var(--white);font-weight:500}
+.hi{color:var(--teal2)!important;font-family:'JetBrains Mono',monospace;font-size:.78rem!important}
+#education{background:rgba(0,0,0,.15)}
+.tl{position:relative;padding-left:2rem}
+.tl::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--teal),transparent)}
+.tl-item{position:relative;padding:0 0 3rem 2.2rem}
+.tl-item::before{content:'';position:absolute;left:-5px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--teal2);border:2px solid var(--navy);transition:transform .3s,box-shadow .3s}
+.tl-item:hover::before{transform:scale(1.6);box-shadow:0 0 14px var(--teal2)}
+.tl-year{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--teal2);letter-spacing:.1em;margin-bottom:.4rem}
+.tl-deg{font-family:'Playfair Display',serif;font-size:1.25rem;margin-bottom:.3rem}
+.tl-inst{font-size:.88rem;color:var(--grey);margin-bottom:.6rem}
+.tl-badge{display:inline-block;background:rgba(14,165,160,.15);color:var(--teal2);border:1px solid rgba(14,165,160,.3);font-size:.72rem;padding:.2rem .75rem;border-radius:3px;font-family:'JetBrains Mono',monospace;letter-spacing:.06em}
+.tl-body{margin-top:.9rem;font-size:.87rem;color:rgba(240,244,248,.62);line-height:1.8}
+.exp-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:2.5rem;transition:all .4s}
+.exp-card:hover{border-color:rgba(14,165,160,.3);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.exp-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem}
+.exp-title{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:.3rem}
+.exp-co{font-size:.87rem;color:var(--grey)}
+.exp-badge{background:rgba(245,158,11,.12);color:var(--amber);border:1px solid rgba(245,158,11,.3);font-size:.7rem;padding:.3rem .8rem;border-radius:3px;font-family:'JetBrains Mono',monospace;letter-spacing:.06em;white-space:nowrap}
+.exp-ul{list-style:none}
+.exp-ul li{padding:.6rem 0;border-bottom:1px solid var(--border);font-size:.9rem;color:rgba(240,244,248,.72);display:flex;gap:.9rem;align-items:flex-start;transition:color .3s}
+.exp-ul li:last-child{border-bottom:none}.exp-ul li:hover{color:var(--white)}
+.exp-ul li::before{content:'▸';color:var(--teal2);flex-shrink:0;margin-top:2px}
+.reloc{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);border-radius:4px;padding:1rem 1.4rem;margin-top:1.2rem;font-size:.87rem;color:rgba(240,244,248,.8);display:flex;gap:.8rem;align-items:flex-start}
+.reloc-icon{font-size:1.1rem;flex-shrink:0}
+#certifications{background:rgba(0,0,0,.15)}
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.cert-c{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:all .3s}
+.cert-c:hover{border-color:rgba(14,165,160,.4);transform:translateY(-2px)}
+.cert-n{font-size:.9rem;font-weight:500;margin-bottom:.3rem}
+.cert-p{font-size:.76rem;color:var(--grey)}
+.cert-s{font-family:'JetBrains Mono',monospace;font-size:.68rem;padding:.25rem .7rem;border-radius:3px;white-space:nowrap;flex-shrink:0}
+.done{background:rgba(14,165,160,.15);color:var(--teal2);border:1px solid rgba(14,165,160,.3)}
+.prog{background:rgba(245,158,11,.12);color:var(--amber);border:1px solid rgba(245,158,11,.3)}
+footer{border-top:1px solid var(--border);padding:3rem 0;text-align:center;position:relative;z-index:1}
+.ft-name{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--teal2);margin-bottom:.5rem}
+.ft-links{display:flex;justify-content:center;gap:2rem;margin:1.5rem 0;flex-wrap:wrap}
+.ft-links a{color:var(--grey);text-decoration:none;font-size:.84rem;transition:color .3s}
+.ft-links a:hover{color:var(--teal2)}
+.ft-copy{font-size:.76rem;color:rgba(148,163,184,.45)}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--navy)}::-webkit-scrollbar-thumb{background:var(--teal);border-radius:2px}
+@media(max-width:960px){.hero-wrap{grid-template-columns:1fr}.hero-right{order:-1}.stat-grid{grid-template-columns:repeat(4,1fr)}.hero-diagram{display:none}.skills-wrap{grid-template-columns:repeat(2,1fr)}.cert-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.skills-wrap{grid-template-columns:1fr}.stat-grid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}}
+</style>
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+<nav>
+  <div class="nav-logo">VG</div>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li><li><a href="#research">Research</a></li>
+    <li><a href="#education">Education</a></li><li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li><li><a href="#qms">QMS</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero"><div class="container"><div class="hero-wrap">
+  <div>
+    <div class="hero-tag"><span></span>Available · Open to Roles Across the UK</div>
+    <h1>Vasanthkumar<br/><em>Govindaraji</em></h1>
+    <p class="hero-sub">Graduate QC Analyst &nbsp;·&nbsp; Analytical Scientist &nbsp;·&nbsp; Microbiologist</p>
+    <p class="hero-intro">MSc Pharmaceutical Biotechnology graduate (Merit) with hands-on experience in <strong>RP-HPLC, ATR-FTIR, UV-Vis Spectroscopy</strong> and ICH-aligned stability studies. MSc research produced a <strong>96.2% purity</strong> mono-labelled insulin conjugate with <strong>zero contamination incidents</strong> across the entire study.</p>
+    <div class="pills">
+      <a class="pill" href="mailto:gvasanthkumar7@gmail.com"><span class="pill-dot"></span>gvasanthkumar7@gmail.com</a>
+      <a class="pill" href="tel:+447778116071"><span class="pill-dot"></span>+44 7778 116 071</a>
+      <a class="pill" href="https://linkedin.com/in/vasanthkumar-govindaraji-62125a1a4" target="_blank"><span class="pill-dot"></span>LinkedIn</a>
+    </div>
+    <div class="hero-btns">
+      <a class="btn-p" href="Vasanthkumar_Portfolio.pdf" download>Download PDF Portfolio</a>
+      <a class="btn-o" href="#research">View Research ↓</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="stat-grid">
+      <div class="stat-c"><div class="stat-n">96.2%</div><div class="stat-l">Mono-label purity in MSc research</div></div>
+      <div class="stat-c"><div class="stat-n">0</div><div class="stat-l">Contamination incidents entire study</div></div>
+      <div class="stat-c"><div class="stat-n">5+</div><div class="stat-l">Years structured lab training</div></div>
+      <div class="stat-c"><div class="stat-n">Merit</div><div class="stat-l">MSc Pharmaceutical Biotechnology — DMU</div></div>
+    </div>
+    <div class="hero-diagram">
+      <div class="diag-label">HPLC Purity Profile — 18h Reaction</div>
+      <svg viewBox="0 0 340 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+        <defs>
+          <linearGradient id="pk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0EA5A0" stop-opacity=".9"/><stop offset="100%" stop-color="#0EA5A0" stop-opacity=".1"/></linearGradient>
+          <linearGradient id="pk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F59E0B" stop-opacity=".7"/><stop offset="100%" stop-color="#F59E0B" stop-opacity=".1"/></linearGradient>
+        </defs>
+        <line x1="30" y1="10" x2="30" y2="115" stroke="#334155" stroke-width="1"/>
+        <line x1="30" y1="115" x2="330" y2="115" stroke="#334155" stroke-width="1"/>
+        <text x="15" y="14" fill="#64748B" font-size="7" font-family="JetBrains Mono,monospace">mAU</text>
+        <text x="170" y="128" fill="#64748B" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">Retention Time (min)</text>
+        <line x1="30" y1="85" x2="330" y2="85" stroke="#1E293B" stroke-width=".5" stroke-dasharray="3,3"/>
+        <line x1="30" y1="55" x2="330" y2="55" stroke="#1E293B" stroke-width=".5" stroke-dasharray="3,3"/>
+        <path d="M30,115 L100,115 Q115,115 130,90 Q145,65 155,18 Q165,65 175,90 Q185,115 200,115 L330,115" fill="url(#pk1)" stroke="#0EA5A0" stroke-width="1.5"/>
+        <path d="M200,115 L220,115 Q225,115 230,108 Q234,103 237,100 Q240,103 243,108 Q246,115 255,115" fill="url(#pk2)" stroke="#F59E0B" stroke-width="1"/>
+        <text x="155" y="13" fill="#2DD4BF" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle">B1 Mono-labelled</text>
+        <text x="155" y="24" fill="#2DD4BF" font-size="10" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="700">96.2%</text>
+        <text x="237" y="96" fill="#F59E0B" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">3.8%</text>
+        <text x="155" y="125" fill="#475569" font-size="6.5" font-family="JetBrains Mono,monospace" text-anchor="middle">17.05 min</text>
+        <text x="237" y="125" fill="#475569" font-size="6.5" font-family="JetBrains Mono,monospace" text-anchor="middle">17.55</text>
+      </svg>
+    </div>
+  </div>
+</div></div></section>
+
+<!-- SKILLS -->
+<section id="skills"><div class="container">
+  <div class="rv"><div class="sec-label">Competencies</div><h2 class="sec-title">Core Technical <span>Skills</span></h2></div>
+  <div class="skills-wrap">
+    <div class="sk-card rv"><span class="sk-icon">🔬</span><div class="sk-title">Instrumentation</div><ul class="sk-list"><li>RP-HPLC — Shimadzu Prominence</li><li>Shimadzu LabSolutions software</li><li>ATR-FTIR — Bruker spectrometer</li><li>UV-Vis Spectroscopy</li><li>GPC / Sephadex G-25 Purification</li><li>Lyophilisation</li></ul></div>
+    <div class="sk-card rv"><span class="sk-icon">📊</span><div class="sk-title">Analytical Methods</div><ul class="sk-list"><li>Method development & optimisation</li><li>ICH-aligned stability studies</li><li>Assay development</li><li>OOS & deviation identification</li><li>Root cause analysis / CAPA</li></ul></div>
+    <div class="sk-card rv"><span class="sk-icon">✅</span><div class="sk-title">Quality & Compliance</div><ul class="sk-list"><li>GMP documentation</li><li>SOP writing & review</li><li>Audit-ready record-keeping</li><li>LIMS workflows (self-study)</li><li>Data integrity principles</li></ul></div>
+    <div class="sk-card rv"><span class="sk-icon">🧫</span><div class="sk-title">Microbiology</div><ul class="sk-list"><li>Aseptic technique</li><li>Gram staining & agar plating</li><li>Broth culture & colony counting</li><li>Mammalian cell culture — HEK293T</li><li>Class II Biological Safety Cabinet</li></ul></div>
+    <div class="sk-card rv"><span class="sk-icon">💻</span><div class="sk-title">Software & Data</div><ul class="sk-list"><li>Shimadzu LabSolutions</li><li>Microsoft Excel — data analysis</li><li>ChemSketch</li><li>Statistical analysis</li></ul></div>
+    <div class="sk-card rv"><span class="sk-icon">⚗️</span><div class="sk-title">Additional Science</div><ul class="sk-list"><li>Dissolution & hardness testing</li><li>Pharmacopoeia specifications</li><li>DNA extraction & gel electrophoresis</li><li>PK/PD principles</li></ul></div>
+  </div>
+  <!-- Pipeline diagram -->
+  <div class="skills-diagram rv">
+    <div class="diag-label">Analytical Instrument Pipeline — MSc Research</div>
+    <svg viewBox="0 0 720 90" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:700px;height:auto;margin:0 auto;display:block">
+      <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#0EA5A0"/></marker></defs>
+      <rect x="5" y="25" width="110" height="40" rx="4" fill="rgba(14,165,160,.12)" stroke="#0EA5A0" stroke-width="1"/>
+      <text x="60" y="42" fill="#2DD4BF" font-size="8.5" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="500">Synthesis</text>
+      <text x="60" y="55" fill="#94A3B8" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">EITC + Actrapid</text>
+      <line x1="115" y1="45" x2="143" y2="45" stroke="#0EA5A0" stroke-width="1.2" marker-end="url(#arr)"/>
+      <rect x="145" y="25" width="110" height="40" rx="4" fill="rgba(14,165,160,.12)" stroke="#0EA5A0" stroke-width="1"/>
+      <text x="200" y="42" fill="#2DD4BF" font-size="8.5" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="500">GPC Purification</text>
+      <text x="200" y="55" fill="#94A3B8" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">Sephadex G-25</text>
+      <line x1="255" y1="45" x2="283" y2="45" stroke="#0EA5A0" stroke-width="1.2" marker-end="url(#arr)"/>
+      <rect x="285" y="25" width="110" height="40" rx="4" fill="rgba(14,165,160,.12)" stroke="#0EA5A0" stroke-width="1"/>
+      <text x="340" y="42" fill="#2DD4BF" font-size="8.5" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="500">RP-HPLC</text>
+      <text x="340" y="55" fill="#94A3B8" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">Shimadzu / LabSol.</text>
+      <line x1="395" y1="45" x2="423" y2="45" stroke="#0EA5A0" stroke-width="1.2" marker-end="url(#arr)"/>
+      <rect x="425" y="25" width="110" height="40" rx="4" fill="rgba(245,158,11,.1)" stroke="#F59E0B" stroke-width="1"/>
+      <text x="480" y="42" fill="#F59E0B" font-size="8.5" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="500">ATR-FTIR</text>
+      <text x="480" y="55" fill="#94A3B8" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">Bruker</text>
+      <line x1="535" y1="45" x2="563" y2="45" stroke="#0EA5A0" stroke-width="1.2" marker-end="url(#arr)"/>
+      <rect x="565" y="25" width="110" height="40" rx="4" fill="rgba(244,63,94,.1)" stroke="#F43F5E" stroke-width="1"/>
+      <text x="620" y="42" fill="#F43F5E" font-size="8.5" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="500">UV Stability</text>
+      <text x="620" y="55" fill="#94A3B8" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">14-Day ICH Study</text>
+    </svg>
+  </div>
+</div></section>
+
+<!-- RESEARCH -->
+<section id="research"><div class="container">
+  <div class="rv"><div class="sec-label">MSc Research Project</div><h2 class="sec-title">Fluorescent Labelling of <span>Insulin</span></h2></div>
+  <div class="res-card rv">
+    <div class="res-title">Fluorescent Labelling of Insulin (Actrapid) with Eosin Isothiocyanate</div>
+    <div class="res-meta">De Montfort University, Leicester &nbsp;·&nbsp; Sep 2023 – Sep 2024 &nbsp;·&nbsp; Individual Project &nbsp;·&nbsp; Outcome: MERIT</div>
+    <p class="res-body">Fluorescently labelled insulin enables pharmacokinetic and receptor-binding studies without radioactive tracers. The challenge: producing a mono-labelled conjugate — exactly one fluorescent dye at one site — to preserve biological activity. EITC was chosen over FITC for superior photostability. The project synthesised, purified, characterised, and assessed stability under varied conditions using RP-HPLC (Shimadzu LabSolutions), ATR-FTIR (Bruker), and UV-Vis spectroscopy.</p>
+    <div class="diag-label" style="margin-bottom:.8rem">Experimental Workflow</div>
+    <div class="workflow">
+      <div class="wf-step">① Synthesis<br/><small style="color:var(--grey);font-size:.65rem">EITC + Actrapid</small></div><span class="wf-arr">→</span>
+      <div class="wf-step">② GPC Purification<br/><small style="color:var(--grey);font-size:.65rem">Sephadex G-25</small></div><span class="wf-arr">→</span>
+      <div class="wf-step">③ Lyophilisation<br/><small style="color:var(--grey);font-size:.65rem">Liquid N₂ → powder</small></div><span class="wf-arr">→</span>
+      <div class="wf-step">④ RP-HPLC<br/><small style="color:var(--grey);font-size:.65rem">Shimadzu / LabSol.</small></div><span class="wf-arr">→</span>
+      <div class="wf-step">⑤ ATR-FTIR<br/><small style="color:var(--grey);font-size:.65rem">Bruker</small></div><span class="wf-arr">→</span>
+      <div class="wf-step">⑥ Stability — 14 Days<br/><small style="color:var(--grey);font-size:.65rem">ICH-aligned UV</small></div>
+    </div>
+    <!-- Purity bar chart -->
+    <div class="diag-label" style="margin-top:2rem;margin-bottom:.8rem">Effect of Reaction Time on Mono-Label Purity</div>
+    <svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:500px;height:auto">
+      <defs>
+        <linearGradient id="bar1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0EA5A0"/><stop offset="100%" stop-color="#0EA5A0" stop-opacity=".4"/></linearGradient>
+        <linearGradient id="bar2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#F59E0B" stop-opacity=".4"/></linearGradient>
+        <linearGradient id="bar3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F43F5E"/><stop offset="100%" stop-color="#F43F5E" stop-opacity=".4"/></linearGradient>
+      </defs>
+      <line x1="55" y1="10" x2="55" y2="130" stroke="#334155" stroke-width="1"/>
+      <line x1="55" y1="130" x2="490" y2="130" stroke="#334155" stroke-width="1"/>
+      <text x="48" y="133" fill="#64748B" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="end">0%</text>
+      <text x="48" y="98" fill="#64748B" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="end">50%</text>
+      <text x="48" y="14" fill="#64748B" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="end">100%</text>
+      <line x1="55" y1="97" x2="490" y2="97" stroke="#1E293B" stroke-width=".5" stroke-dasharray="3,3"/>
+      <rect x="80" y="17" width="100" height="113" rx="2" fill="url(#bar1)" stroke="#0EA5A0" stroke-width="1"/>
+      <text x="130" y="13" fill="#2DD4BF" font-size="10" font-family="JetBrains Mono,monospace" text-anchor="middle" font-weight="700">96.2%</text>
+      <text x="130" y="143" fill="#94A3B8" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle">18 hours</text>
+      <text x="130" y="153" fill="#2DD4BF" font-size="7" font-family="JetBrains Mono,monospace" text-anchor="middle">★ Optimal</text>
+      <rect x="230" y="39" width="100" height="91" rx="2" fill="url(#bar2)" stroke="#F59E0B" stroke-width="1"/>
+      <text x="280" y="35" fill="#F59E0B" font-size="10" font-family="JetBrains Mono,monospace" text-anchor="middle">77%</text>
+      <text x="280" y="143" fill="#94A3B8" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle">24 hours</text>
+      <rect x="380" y="51" width="100" height="79" rx="2" fill="url(#bar3)" stroke="#F43F5E" stroke-width="1"/>
+      <text x="430" y="47" fill="#F43F5E" font-size="10" font-family="JetBrains Mono,monospace" text-anchor="middle">67%</text>
+      <text x="430" y="143" fill="#94A3B8" font-size="8" font-family="JetBrains Mono,monospace" text-anchor="middle">28 hours</text>
+    </svg>
+    <table class="rtable">
+      <thead><tr><th>Variable</th><th>Finding</th><th>QC Relevance</th></tr></thead>
+      <tbody>
+        <tr><td>Reaction time</td><td class="hi">18 h → 96.2% mono-labelled</td><td>Method development & spec-setting</td></tr>
+        <tr><td>Molar ratio (EITC:Insulin)</td><td>2:1 increased multi-labelled by-products</td><td>Reagent conc. as critical process parameter</td></tr>
+        <tr><td>Reaction pH</td><td>pH &gt;7.0 reduced mono-label to ~75%</td><td>pH as critical quality attribute</td></tr>
+        <tr><td>FTIR confirmation</td><td class="hi">Thiourea bond at 2136 cm⁻¹; intact</td><td>Structural integrity verification</td></tr>
+        <tr><td>Stability — distilled water</td><td>Absorbance: 1.378 → 1.217 (14 days)</td><td>ICH-aligned shelf-life assessment</td></tr>
+        <tr><td>Contamination events</td><td class="hi">Zero across entire project</td><td>Aseptic technique & GMP practice</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div></section>
+
+<!-- EDUCATION -->
+<section id="education"><div class="container">
+  <div class="rv"><div class="sec-label">Education</div><h2 class="sec-title">Academic <span>Background</span></h2></div>
+  <div class="tl rv">
+    <div class="tl-item">
+      <div class="tl-year">2023 – 2024</div><div class="tl-deg">MSc Pharmaceutical Biotechnology</div>
+      <div class="tl-inst">De Montfort University, Leicester, UK</div><span class="tl-badge">Merit</span>
+      <p class="tl-body">Trained on Shimadzu Prominence HPLC (LabSolutions), Bruker ATR-FTIR, UV-Vis spectroscopy, and GPC purification. Completed one-week mammalian cell culture intensive (HEK293T, Class II BSC). MSc research: 96.2% purity mono-labelled insulin conjugate, zero contamination incidents.</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2018 – 2022</div><div class="tl-deg">Bachelor of Pharmacy</div>
+      <div class="tl-inst">SRIPMS, Coimbatore — Dr. MGR University, India</div><span class="tl-badge">First Class Equivalent</span>
+      <p class="tl-body">Five years structured lab training: analytical chemistry, pharmaceutical quality testing (dissolution, hardness, friability to pharmacopoeia specifications), medicinal chemistry, microbiology, and molecular biology.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- EXPERIENCE -->
+<section id="experience"><div class="container">
+  <div class="rv"><div class="sec-label">Professional Experience</div><h2 class="sec-title">Work <span>Experience</span></h2></div>
+  <div class="exp-card rv">
+    <div class="exp-head">
+      <div><div class="exp-title">Warehouse Team Lead</div><div class="exp-co">Royal Mail &nbsp;·&nbsp; Northampton, UK &nbsp;·&nbsp; October 2023 – Present</div></div>
+      <div class="exp-badge">Promoted on Merit</div>
+    </div>
+    <ul class="exp-ul">
+      <li>Supervised and trained a team of six in SOP adherence, safe working practices, and quality verification — sign-off only on consistently demonstrated standard.</li>
+      <li>Managed throughput of 20,000–25,000 items per shift at 99% documented accuracy; team holds site record: 25,000 parcels sorted in 9.5 hours with full accuracy.</li>
+      <li>Maintained zero recorded sorting errors across two consecutive reporting cycles through structured process controls and root cause identification — the same corrective-action thinking used in OOS management.</li>
+      <li>Kept documentation audit-ready throughout every shift; inspection-readiness treated as a daily standard, not a one-off preparation.</li>
+      <li>Promoted internally on merit based on accuracy record and operational reliability under sustained pressure.</li>
+    </ul>
+    <div class="reloc">
+      <span class="reloc-icon">📍</span>
+      <span><strong style="color:var(--amber)">Location &amp; Availability:</strong> Based in Leicester. Fully available and committed to relocating for the right pharmaceutical role. Open to roles across the UK.</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications"><div class="container">
+  <div class="rv"><div class="sec-label">Certifications</div><h2 class="sec-title">Professional <span>Development</span></h2></div>
+  <div class="cert-grid rv">
+    <div class="cert-c"><div><div class="cert-n">High Performance Liquid Chromatography (HPLC)</div><div class="cert-p">Udemy · March 2025</div></div><span class="cert-s done">Completed</span></div>
+    <div class="cert-c"><div><div class="cert-n">Quality in the Pharmaceutical Industry (GMP, GLP, GHP)</div><div class="cert-p">Udemy · April 2025</div></div><span class="cert-s done">Completed</span></div>
+    <div class="cert-c"><div><div class="cert-n">Control of Substances Hazardous to Health (COSHH)</div><div class="cert-p">Alison · March 2026</div></div><span class="cert-s done">Completed</span></div>
+    <div class="cert-c"><div><div class="cert-n">Internal Audit Training</div><div class="cert-p">Alison · 2026</div></div><span class="cert-s prog">In Progress</span></div>
+    <div class="cert-c"><div><div class="cert-n">LIMS Workflows & Data Integrity Principles</div><div class="cert-p">Self-study · Ongoing</div></div><span class="cert-s prog">In Progress</span></div>
+  </div>
+</div></section>
+
+<!-- QMS -->
+<section id="qms"><div class="container">
+  <div class="rv"><div class="sec-label">Quality Management Systems</div><h2 class="sec-title">Foundation of <span>Quality Management</span></h2></div>
+
+  <p class="rv" style="font-size:.95rem;color:rgba(240,244,248,.72);line-height:1.85;margin-bottom:2rem;">
+    Across my MSc training, BPharm studies, and independent professional development, I have built a structured understanding of Quality Management Systems (QMS) as they apply in pharmaceutical and regulated laboratory environments. This knowledge underpins how I approach every aspect of laboratory and documentation work — from daily record-keeping to understanding the regulatory framework that governs batch release and product safety.
+  </p>
+
+  <div class="skills-wrap rv" style="grid-template-columns:repeat(2,1fr);margin-bottom:2rem;">
+
+    <div class="sk-card">
+      <span class="sk-icon">📋</span>
+      <div class="sk-title">GMP &amp; GLP</div>
+      <ul class="sk-list">
+        <li>Good Manufacturing Practice principles and their application in pharmaceutical production and QC environments</li>
+        <li>Good Laboratory Practice — ensuring traceability, integrity, and reproducibility of laboratory data</li>
+        <li>Understanding of batch records, deviation reports, and change control procedures</li>
+        <li>Audit-readiness as a daily standard — applied directly in my Royal Mail Team Lead role</li>
+      </ul>
+    </div>
+
+    <div class="sk-card">
+      <span class="sk-icon">📁</span>
+      <div class="sk-title">Documentation &amp; Data Integrity</div>
+      <ul class="sk-list">
+        <li>SOP writing, review, and version control — including a personalised SOP produced during mammalian cell culture module</li>
+        <li>ALCOA+ principles: Attributable, Legible, Contemporaneous, Original, Accurate</li>
+        <li>Audit-ready record-keeping across both laboratory and operational environments</li>
+        <li>LIMS workflows (self-study in progress) and electronic data management principles</li>
+      </ul>
+    </div>
+
+    <div class="sk-card">
+      <span class="sk-icon">📊</span>
+      <div class="sk-title">Statistical Process Control (SPC)</div>
+      <ul class="sk-list">
+        <li>Understanding of control charts, process capability (Cp, Cpk), and trend monitoring as tools for detecting process drift before OOS events occur</li>
+        <li>Applied statistical analysis during MSc HPLC method optimisation — interpreting purity data across multiple reaction conditions to identify the optimal process parameter set</li>
+        <li>Familiarity with OOS and OOT investigation workflows and root cause analysis / CAPA frameworks</li>
+      </ul>
+    </div>
+
+    <div class="sk-card">
+      <span class="sk-icon">🏅</span>
+      <div class="sk-title">ISO Standards</div>
+      <ul class="sk-list">
+        <li>ISO 9001 — Quality Management System requirements: process approach, risk-based thinking, continual improvement</li>
+        <li>ISO/IEC 17025 — Competence requirements for testing and calibration laboratories, including method validation and measurement uncertainty</li>
+        <li>ICH Q10 Pharmaceutical Quality System — lifecycle approach to quality from development through manufacture</li>
+        <li>ICH stability guidelines (Q1A–Q1F) — applied directly in the 14-day stability study component of MSc research</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- QMS Framework summary table -->
+  <div class="rv" style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:2rem;">
+    <div class="diag-label" style="margin-bottom:1.2rem">QMS Knowledge — Applied Context</div>
+    <table class="rtable">
+      <thead><tr><th>QMS Element</th><th>Knowledge Base</th><th>Applied Evidence</th></tr></thead>
+      <tbody>
+        <tr><td>GMP Documentation</td><td>Udemy — Quality in the Pharmaceutical Industry</td><td>Audit-ready records maintained across Royal Mail reporting cycles; SOP written during MSc cell culture module</td></tr>
+        <tr><td>GLP &amp; Data Integrity</td><td>MSc training + self-study (ALCOA+ principles)</td><td>HPLC and FTIR data recorded and processed to GLP standard throughout MSc research project</td></tr>
+        <tr><td>Statistical Process Control</td><td>MSc analytical method optimisation</td><td>Purity data analysed across 5 reaction time conditions; optimal parameter identified and justified statistically</td></tr>
+        <tr><td>ISO 17025</td><td>Self-study — laboratory competence framework</td><td>Understanding of method validation, measurement uncertainty, and accreditation requirements for testing labs</td></tr>
+        <tr><td>ICH Stability (Q1A)</td><td>MSc 14-day stability study</td><td class="hi">UV absorbance monitoring across 300–600nm; storage condition assessment; degradation trend analysis</td></tr>
+        <tr><td>OOS &amp; CAPA</td><td>GMP coursework + operational application</td><td class="hi">Root cause identification applied in Royal Mail zero-error performance; OOS thinking embedded in lab training</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div></section>
+
+<footer><div class="container">
+  <div class="ft-name">Vasanthkumar Govindaraji</div>
+  <p style="font-size:.84rem;color:var(--grey);margin-bottom:.3rem">Graduate QC Analyst · Analytical Scientist · Microbiologist</p>
+  <p style="font-size:.8rem;color:var(--grey)">Leicester, UK &nbsp;·&nbsp; Open to Roles Across the UK</p>
+  <div class="ft-links">
+    <a href="mailto:gvasanthkumar7@gmail.com">gvasanthkumar7@gmail.com</a>
+    <a href="tel:+447778116071">+44 7778 116 071</a>
+    <a href="https://linkedin.com/in/vasanthkumar-govindaraji-62125a1a4" target="_blank">LinkedIn</a>
+    <a href="Vasanthkumar_Portfolio.pdf" download>Download PDF</a>
+  </div>
+  <p class="ft-copy">Open to Graduate QC Analyst, Analytical Scientist, Aseptic Production Operator and Microbiologist roles across the UK.</p>
+</div></footer>
+
+<script>
+const obs=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('vis'),i*70);obs.unobserve(e.target)}});},{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+document.querySelectorAll('.sk-card').forEach((c,i)=>c.style.transitionDelay=`${i*.07}s`);
+const secs=document.querySelectorAll('section[id]');
+const nls=document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll',()=>{let cur='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-220)cur=s.id});nls.forEach(a=>a.style.color=a.getAttribute('href')===`#${cur}`?'var(--teal2)':'')});
+</script>
+</body>
+</html>
